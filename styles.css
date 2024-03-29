@@ -1,0 +1,73 @@
+/* Estilos adicionales */
+body {
+    padding-top: 56px; /* Ajustar al tamaño de la barra de navegación */
+
+}
+
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 100%;
+    position: relative;
+    background: #ffffff;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.card .price {
+    position: absolute;
+}
+
+.card:hover > .card-info {
+    display: block;
+    transition: 0.2s all ease;
+}
+
+.card .card-buttons .btn:hover {
+    color: #ffffff;
+}
+
+.card:hover,
+.card-info {
+    box-shadow: 1px 1px 13px 2px rgba(94, 94, 94, 0.5);
+}
+
+.card-info {
+    padding: 0.5rem;
+    display: none;
+    position: absolute;
+    top: 100%;
+    background: #ffffff;
+    z-index: 10;
+    width: 100%;
+}
+
+
+/* Estilo para el menú activo en el navbar */
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+}
+
+/* Estilo para el menú de navegación en dispositivos móviles */
+@media (max-width: 768px) {
+ 
+    .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        top: 56px;
+        width: 100%;
+        display: none;
+    }
+
+    .navbar-collapse.show {
+        display: block;
+    }
+
+    .navbar-nav {
+        width
+
+    }
+
